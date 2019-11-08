@@ -1,0 +1,100 @@
+/* color variable so that we don't have to copy it everytime (for text shadow) */
+:root {
+    --color: rgb(53, 52, 52);
+}
+
+/* Make our background fill the screen, do not repeat */
+body {
+    background: black no-repeat center center fixed;
+    background-size: cover;
+    overflow: hidden;
+}
+
+/* Center the greeting and time, change font, add shadows */
+#greeting-and-time {
+    font-family: 'Roboto';
+    width: 100%;
+    text-align: center;
+    position: absolute;
+    color: white;
+    text-shadow: -0.5px -0.5px 0 , 0.5px -0.5px 0 var(--color), -0.5px 0.5px 0 var(--color), 0.5px 0.5px 0 var(--color);
+    bottom: 50%;
+}
+
+/* Dock styling, center it at the bottom, remove list attributes, make it inline */
+#dock {
+    list-style-type: none;
+    margin: 0 auto;
+    padding: 10px;
+    background-color: rgba(31, 30, 30, 0.6); 
+    position: absolute;
+    width: auto;
+    height: 127px;
+    left: 50%;
+    bottom: 0px;
+    transform: translate(-50%, 10%);
+    border: 0.5px solid rgb(70, 69, 69);
+    border-radius: 20px; 
+}
+
+.dock-item {
+    float: left;
+} 
+
+/* Pad our dock items */
+.dock-item a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 14px;
+    text-decoration: none;
+} 
+
+/* Add hover effect */
+.dock-item a:hover {
+    border-radius: 10px;
+    background-color: rgba(117, 114, 114, 0.3);
+}
+
+/* Make time a larger size */
+#time {
+    font-size: 120px;
+}
+
+/* Set our greeting font size */
+#greeting {
+    font-size: 60px;
+}
+
+/* Remove link color, underline, move it to bottom left */
+#image-link {
+    position: absolute;
+    bottom: 18px;
+    left: 18px;
+    font-family: 'Roboto';
+    font-size: 18px;
+    color: white;
+    text-decoration: none;
+    padding-bottom: 1px;
+    transform: translate(0, 5px);
+    text-shadow: -0.2px -0.2px 0 , 0.2px -0.2px 0 var(--color), -0.2px 0.2px 0 var(--color), 0.2px 0.2px 0 var(--color); 
+}
+
+/* Add hover effect */
+#image-link:hover {
+    border-bottom: 1px solid white;
+    padding-bottom: 0px;
+}
+
+/* Add date, move to bottom right */
+#date {
+    position: absolute;
+    bottom: 2px;
+    right: 18px;
+    font-family: 'Roboto';
+    font-size: 18px;
+    color: white;
+    text-decoration: none;
+    transform: translate(0, 5px);
+    text-shadow: -0.2px -0.2px 0 , 0.2px -0.2px 0 var(--color), -0.2px 0.2px 0 var(--color), 0.2px 0.2px 0 var(--color);
+}
