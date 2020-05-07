@@ -23,6 +23,7 @@
 		setElementText('time', `${hour}:${minute.padStart(2, 0)} ${meridiem}`);
 		setElementText('greeting', `${greeting}, ${NAME}`);
 		setElementText('date', now.toLocaleDateString('en-US', DATE_OPTIONS));
+		if (document.title !== greeting) document.title = greeting;
 	}
 	updateTime();
 	setInterval(updateTime, 1000);
