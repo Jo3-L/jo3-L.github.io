@@ -30,7 +30,7 @@ body {
     position: absolute;
     width: auto;
     height: 127px;
-    left: 50%;
+	left: 50%;
     bottom: 0px;
     transform: translate(-50%, 10%);
     border: 0.5px solid rgb(70, 69, 69);
@@ -80,12 +80,6 @@ body {
     text-shadow: -0.2px -0.2px 0 , 0.2px -0.2px 0 var(--color), -0.2px 0.2px 0 var(--color), 0.2px 0.2px 0 var(--color); 
 }
 
-/* Add hover effect */
-#image-link:hover {
-    border-bottom: 1px solid white;
-    padding-bottom: 0px;
-}
-
 /* Add date, move to bottom right */
 #date {
     position: absolute;
@@ -97,4 +91,9 @@ body {
     text-decoration: none;
     transform: translate(0, 5px);
     text-shadow: -0.2px -0.2px 0 , 0.2px -0.2px 0 var(--color), -0.2px 0.2px 0 var(--color), 0.2px 0.2px 0 var(--color);
+}
+
+@font-face {
+	font-family: Roboto;
+	src: url(./assets/fonts/Roboto.ttf);
 }
